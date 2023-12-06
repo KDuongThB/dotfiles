@@ -1,2 +1,2 @@
 # dotfiles
-my dotfiles for quick Arch Linux setup
+my dotfiles for quick Linux and Windows setup
