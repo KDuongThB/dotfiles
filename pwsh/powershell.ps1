@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "D:\dotfiles\catppucin.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "D:\dotfiles\omp\catppucin.omp.json" | Invoke-Expression
 clear
 
 echo ""
