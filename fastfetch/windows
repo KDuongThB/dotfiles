@@ -6,11 +6,13 @@
     --set-keyless SoftwareEnd=\e[92m└──────────────────────────────────────────────────────┘
     --set-keyless Colors=  \e[38m \e[37m \e[36m \e[35m \e[34m \e[33m \e[32m \e[31m
     --set-keyless IntenseColors=  \e[98m \e[97m \e[96m \e[95m \e[94m \e[93m \e[92m \e[91m
-    --structure HardwareStart:Host:CPU:GPU:Memory:HardwareEnd:SoftwareStart:OS:Kernel:WM:Shell:Terminal:TerminalFont:Packages:SoftwareEnd:Colors:IntenseColors
+    --structure HardwareStart:Host:CPU:GPU:Memory:Uptime:HardwareEnd:Break:SoftwareStart:OS:Kernel:WM:Shell:Terminal:TerminalFont:Packages:SoftwareEnd:Colors:IntenseColors
     --host-key "  \e[1;94m"
     --cpu-key "  \e[1;94m󰍛"
     --gpu-key "  \e[1;94m󱤓"
     --memory-key "  \e[1;94m󰘚"
+    --disk-key "  \e[1;94m󰆼"
+    --uptime-key "  \e[1;94m󰔛"
     --os-key "  \e[92m"
     --kernel-key "  \e[92m"
     --wm-key "  \e[92m"
