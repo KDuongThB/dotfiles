@@ -11,7 +11,7 @@
 --cpu-key "  󰍛" 
 --gpu-key "  󱤓" 
 --memory-key "  󰘚"
---swap-key "  \e[38m󰘚"
+--swap-key "  \e[31m󰘚"
 --disk-key "  󰆼"
 --uptime-key "  󰔛"
 --os-key "  " 
