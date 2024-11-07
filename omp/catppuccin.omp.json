@@ -24,7 +24,7 @@
           "type": "text",
           "style": "plain",
           "foreground": "p:mauve",
-          "template": "╭── "
+          "template": "╭─── "
         },
         {
           "type": "time",
@@ -116,7 +116,7 @@
           "style": "plain",
           "foreground": "p:green",
           "fetch_package_manager": true,
-          "template": "{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }}{{ else }}󰎙 {{ end }}{{ if .Error }}{{ .Error }}{{ end }}{{ .Full }}"
+          "template": "{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }}{{ else }}󰎙 {{ end }}{{ if .Error }}{{ .Error }}{{ end }}{{ .Full }} "
         },
         {
           "type": "ruby",
@@ -141,7 +141,7 @@
           "type": "text",
           "style": "plain",
           "foreground": "p:mauve",
-          "template": "╰── "
+          "template": "╰─ "
         },
         {
           "foreground": "p:pink",

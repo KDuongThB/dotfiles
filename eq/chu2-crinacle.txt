@@ -9,3 +9,4 @@ Filter 7: ON PK Fc 9560 Hz Gain 1.6 dB Q 2.29
 Filter 8: ON PK Fc 1418 Hz Gain -0.7 dB Q 2.98
 Filter 9: ON PK Fc 1028 Hz Gain 0.5 dB Q 3.66
 Filter 10: ON PK Fc 2167 Hz Gain 0.4 dB Q 4.09
+Device: Headphones Realtek USB2.0 Audio {23bc0aba-5037-405c-8de7-522b2d96148e}; Headphones Realtek(R) Audio {a4a97e75-960b-4374-b6a4-a3ca9d5f8ee5}
