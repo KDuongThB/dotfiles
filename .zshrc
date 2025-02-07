@@ -129,3 +129,4 @@ eval "$(fzf --zsh --preview "bat --color=always --style=numbers --line-range=:50
 # fastfetch
 fastfetch --config examples/9
 eval $(zoxide init zsh)
+
