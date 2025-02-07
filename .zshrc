@@ -119,6 +119,7 @@ alias ls="lsd"
 alias cat='bat --theme=Nord --color=always'
 alias tf='terraform'
 alias vim='nvim'
+alias cd='z'
 # homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
@@ -128,5 +129,5 @@ eval "$(fzf --zsh --preview "bat --color=always --style=numbers --line-range=:50
 
 # fastfetch
 fastfetch --config examples/9
-eval $(zoxide init zsh)
+eval "$(zoxide init zsh)"
 
