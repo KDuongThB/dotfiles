@@ -16,7 +16,7 @@ Set-Alias -Name ls -Value lsd
 Set-Alias -Name tf -Value terraform
 Set-Alias -Name 'npp' -Value 'C:\Program Files\Notepad++\notepad++.exe'
 Set-Alias -Name 'olm' -Value ollama
-Set-Alias -Name 'cat' -Value bat
+Set-Alias -Name 'cat' -Value 'bat --theme=Nord'
 Set-Alias -Name 'ff' -Value 'fastfetch.exe'
 Set-Alias -Name 'tfr' -Value 'terraformer'
 Set-Alias -Name 'grep' -Value 'rg'
@@ -25,7 +25,7 @@ Set-Alias -Name 'grep' -Value 'rg'
 oh-my-posh init pwsh --config "D:\dotfiles\omp\catppuccin.omp.json" | Invoke-Expression
 clear
 echo ""
-fastfetch --config 'neofetch'
+fastfetch --config 'examples/9'
 echo ""
 
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'

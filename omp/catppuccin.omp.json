@@ -1,96 +1,109 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-    "os": "#ACB0BE",
-    "closer": "p:os",
-    "pink": "#F5C2E7",
-    "lavender": "#B4BEFE",
     "blue": "#89B4FA",
-    "sapphire": "#74C7EC",
+    "closer": "p:os",
     "green": "#A6E3A1",
-    "red": "#F38BA8",
+    "lavender": "#B4BEFE",
     "maroon": "#EBA0AC",
     "mauve": "#CBA6F7",
+    "os": "#ACB0BE",
     "peach": "#FAB387",
-    "yellow": "#f9e2af",
+    "pink": "#F5C2E7",
+    "red": "#F38BA8",
     "rosewater": "#F5E0DC",
-    "text": "#CDD6F4"
+    "sapphire": "#74C7EC",
+    "text": "#CDD6F4",
+    "yellow": "#f9e2af"
   },
   "blocks": [
     {
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "type": "text",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\u256d\u2500\u2500\u2500 ",
           "foreground": "p:mauve",
-          "template": "╭─── "
+          "type": "text",
+          "style": "plain"
         },
         {
-          "type": "time",
-          "style": "plain",
-          "foreground": "p:text",
           "properties": {
+            "cache_duration": "none",
             "time_format": "02 Jan 03:04:05 A.M."
           },
-          "template": "{{ .CurrentDate | date .Format }} "
+          "template": "{{ .CurrentDate | date .Format }} ",
+          "foreground": "p:text",
+          "type": "time",
+          "style": "plain"
         },
         {
-          "type": "executiontime",
-          "style": "plain",
-          "foreground": "p:os",
-          "template": "<></> {{ .FormattedMs }}",
           "properties": {
             "always_enabled": true,
-            "threshold": 1,
-            "style": "roundrock"
-          }
+            "cache_duration": "none",
+            "style": "roundrock",
+            "threshold": 1
+          },
+          "template": "<>\ueba2</> {{ .FormattedMs }}",
+          "foreground": "p:os",
+          "type": "executiontime",
+          "style": "plain"
         }
-      ],
-      "type": "prompt"
-    },
-
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "newline": false,
-      "overflow": "hide",
-      "filler": "<p:mauve>─</>",
-      "segments": []
+      ]
     },
     {
       "type": "prompt",
       "alignment": "left",
-      "newline": true,
+      "filler": "<p:mauve>\u2500</>",
+      "overflow": "hide"
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
       "segments": [
         {
-          "type": "text",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\u251c",
           "foreground": "p:mauve",
-          "template": "├"
+          "type": "text",
+          "style": "plain"
         },
         {
-          "type": "text",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\u2500\u2500 ",
           "foreground": "p:mauve",
-          "template": "── "
+          "type": "text",
+          "style": "plain"
         },
         {
-          "foreground": "p:os",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
           "template": "{{.Icon}}{{ if .WSL }} WSL{{ end }} ",
-          "type": "os"
+          "foreground": "p:os",
+          "type": "os",
+          "style": "plain"
         },
         {
-          "foreground": "p:blue",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
           "template": "{{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }}@{{ .HostName }} ",
-          "type": "session"
+          "foreground": "p:blue",
+          "type": "session",
+          "style": "plain"
         },
         {
-          "foreground": "p:lavender",
           "properties": {
             "branch_icon": "\ue725 ",
+            "cache_duration": "none",
             "cherry_pick_icon": "\ue29b ",
             "commit_icon": "\uf417 ",
             "fetch_status": false,
@@ -102,80 +115,106 @@
             "tag_icon": "\uf412 "
           },
           "template": "{{ .HEAD }} ",
-          "style": "plain",
-          "type": "git"
+          "foreground": "p:lavender",
+          "type": "git",
+          "style": "plain"
         },
         {
-          "type": "java",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "foreground": "p:peach",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
+          "type": "java",
+          "style": "plain"
         },
         {
-          "type": "node",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }}{{ else }}\udb80\udf99 {{ end }}{{ if .Error }}{{ .Error }}{{ end }}{{ .Full }} ",
           "foreground": "p:green",
-          "fetch_package_manager": true,
-          "template": "{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }}{{ else }}󰎙 {{ end }}{{ if .Error }}{{ .Error }}{{ end }}{{ .Full }} "
+          "type": "node",
+          "style": "plain"
         },
         {
-          "type": "ruby",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\ue791 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "foreground": "p:red",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
+          "type": "ruby",
+          "style": "plain"
         },
         {
-          "type": "python",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\ue235  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "foreground": "p:sapphire",
-          "template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
+          "type": "python",
+          "style": "plain"
         }
-      ]
+      ],
+      "newline": true
     },
     {
       "type": "prompt",
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
-          "type": "text",
-          "style": "plain",
-          "foreground": "p:mauve",
-          "template": "╰─ "
-        },
-        {
-          "foreground": "p:pink",
           "properties": {
-            "folder_icon": "..\ue5fe..",
-            "home_icon": "󱂵",
-            "style": "agnoster_short",
-            "mixed_threshold": 5
+            "cache_duration": "none"
           },
-          "style": "plain",
+          "template": "\u2570\u2500 ",
+          "foreground": "p:mauve",
+          "type": "text",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
+            "folder_icon": "..\ue5fe..",
+            "home_icon": "\udb84\udcb5",
+            "mixed_threshold": 5,
+            "style": "agnoster_short"
+          },
           "template": "{{ .Path }} ",
-          "type": "path"
+          "foreground": "p:pink",
+          "type": "path",
+          "style": "plain"
         },
         {
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\uf105",
           "foreground": "p:red",
-          "template": "\uf105",
-          "type": "text"
+          "type": "text",
+          "style": "plain"
         },
         {
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\uf105",
           "foreground": "p:sapphire",
-          "template": "\uf105",
-          "type": "text"
+          "type": "text",
+          "style": "plain"
         },
         {
-          "style": "plain",
-          "foreground": "p:green",
+          "properties": {
+            "cache_duration": "none"
+          },
           "template": "\uf105",
-          "type": "text"
+          "foreground": "p:green",
+          "type": "text",
+          "style": "plain"
         }
-      ]
+      ],
+      "newline": true
     }
   ],
-  "final_space": true,
-  "version": 2
+  "version": 3,
+  "final_space": true
 }
