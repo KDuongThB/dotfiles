@@ -16,7 +16,7 @@ Set-Alias -Name ls -Value lsd
 Set-Alias -Name tf -Value terraform
 Set-Alias -Name 'npp' -Value 'C:\Program Files\Notepad++\notepad++.exe'
 Set-Alias -Name 'olm' -Value ollama
-Set-Alias -Name 'cat' -Value 'bat --theme=Nord'
+Set-Alias -Name 'cat' -Value 'bat'
 Set-Alias -Name 'ff' -Value 'fastfetch.exe'
 Set-Alias -Name 'tfr' -Value 'terraformer'
 Set-Alias -Name 'grep' -Value 'rg'
