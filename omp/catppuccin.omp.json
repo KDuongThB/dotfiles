@@ -188,7 +188,7 @@
           "properties": {
             "cache_duration": "none"
           },
-          "template": "\uf105",
+          "template": "\u276f",
           "foreground": "p:red",
           "type": "text",
           "style": "plain"
@@ -197,7 +197,7 @@
           "properties": {
             "cache_duration": "none"
           },
-          "template": "\uf105",
+          "template": "\u276f",
           "foreground": "p:sapphire",
           "type": "text",
           "style": "plain"
@@ -206,7 +206,7 @@
           "properties": {
             "cache_duration": "none"
           },
-          "template": "\uf105",
+          "template": "\u276f",
           "foreground": "p:green",
           "type": "text",
           "style": "plain"
