@@ -15,7 +15,7 @@
     "sapphire": "#74C7EC",
     "text": "#CDD6F4",
     "yellow": "#f9e2af"
-  },
+  }, 
   "blocks": [
     {
       "type": "prompt",

@@ -22,7 +22,7 @@ Set-Alias -Name 'tfr' -Value 'terraformer'
 Set-Alias -Name 'grep' -Value 'rg'
 
 # prompt and fetch
-oh-my-posh init pwsh --config "D:\dotfiles\omp\catppuccin.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "https://raw.githubusercontent.com/KDuongThB/dotfiles/refs/heads/master/omp/catppuccin.omp.json" | Invoke-Expression
 clear
 echo ""
 fastfetch --config 'examples/9'
